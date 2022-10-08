@@ -3,8 +3,8 @@
     font-family: Helvetica;
     margin: 0;
     padding: 0;
-    background-color: #222;
-    color: #fff;
+    background-color: rgb(216, 216, 216);
+    color: #000;
 }
 
 
@@ -16,22 +16,26 @@
     justify-content: space-between;
     align-items: center;
     background-color: #222;
-    border-bottom: 1px solid #810000;
+    border-bottom: 3px solid #810000;
 }
 
 #navbar ul{
+    background-color: transparent;
     display: flex;
     list-style: none;
 }
 
 #navbar ul li{
+    background-color: transparent;
     margin-left: 1em;
 }
 
 #navbar ul li a{
+    background-color: transparent;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
     font-weight: bold;
+    color: rgb(216, 216, 216);
 }
 
 #navbar ul li a:hover{
@@ -53,6 +57,7 @@
 
 .card{
     width: 250px;
+    height: 450px;
     margin: 5px 0;
     border: 4px solid #810000;
     border-radius: 5px;
@@ -60,7 +65,7 @@
 
 .card-img{
     width: 250px;
-    height: 250px;
+    height: 62.5%;
     display: flex;
     justify-content: center;
     background-color: #fff;
@@ -71,32 +76,45 @@
     object-fit: contain;
 }
 
-.card-body h4, 
-.card-body p{
-    margin-top: 5px;
-    text-align: center;
-}
-
 .card-body{
+    width: 250px;
+    height: 37.5%;
+    background-color: #810000;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.card-body h4, 
+.card-body p{
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    margin-top: 10px;
+    height: 25%;
+    text-align: center;
+}
+
+
+
 .card-body a{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 150px;
+    margin: 10px 0;
     padding: 5px;
-    margin: 15px;
     text-decoration: none;
     border-radius: 5px;
     background-color: #810000;
+    border: 2px solid #fff;
     color: #fff;
 }
 
 .card-body a:hover{
-    background-color: #510000;
+    background-color: rgb(216, 216, 216);
+    color: #810000;
+    border-color: #810000;
 }
 
 /*   FOOTER   */
@@ -105,7 +123,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #810000;
+    border-top: 3px solid #810000;
+    background-color: #222;
 }
 
 footer span{
