@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize')
 
 const db = require('../db/conn')
 
-const Produto = db.define('Produto', {
+const Whisky = db.define('Whisky', {
     title:{
         type: DataTypes.STRING,
         allowNull: false,
@@ -18,4 +18,4 @@ const Produto = db.define('Produto', {
     },
 })
 
-module.exports = Produto
+module.exports = Whisky

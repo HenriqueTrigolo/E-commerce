@@ -1,0 +1,19 @@
+<h1>Whiskies</h1>
+<div class="container-cards">
+    {{#each todosWhiskies}}
+        <div class="card">
+            <div class="card-img">
+                <img src="/img/whiskies/whisky_{{this.id}}.jpg" class="card-img-top" alt="whisky_{{this.id}}">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{this.title}}</h5>
+                <p class="card-text">{{this.description}}</p>
+                <p class="card-price">{{this.price}}</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+
+

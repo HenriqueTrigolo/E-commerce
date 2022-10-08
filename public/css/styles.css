@@ -1,11 +1,21 @@
+.container-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .card{
     width: 250px;
+    margin: 5px 0;
+}
+
+.card-img{
+    width: 250px;
+    height: 250px;
 }
 
 .card img{
-    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.card-img-box{
-   height: 250px;
-}
