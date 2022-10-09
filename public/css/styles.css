@@ -68,8 +68,9 @@ h1{
 
 .produto-card-img{
     height: 100%;
-    width: 60%;
     background-color: #222;
+    display: flex;
+    justify-content: space-between;
 }
 
 .produto-card-img img{
